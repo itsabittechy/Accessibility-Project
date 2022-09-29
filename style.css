@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: darkgray;
+  background: white;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dark-mode {
+  color: dimgray;
+  background: black;
+}
+
+h1,
+h3 {
+  color: gray;
+}
+
+.dark-mode h1,
+.dark-mode h3 {
+  color: darkgray;
+}
+
+p {
+  max-width: 30em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid darkgray;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode button {
+  border-color: dimgray;
+}
+
+#twitter {
+  vertical-align: bottom;
+}
+
+#twitter path {
+  fill: darkgray;
+}
+
+.dark-mode #twitter path {
+  fill: dimgray;
+}
+
+#light-switch {
+  display: flex;
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  background: white;
+}
+
+#light-switch[aria-pressed='true'] path {
+  fill: goldenrod;
+}
